@@ -174,16 +174,8 @@ private:
     void setInitDir(){
     	 state.ip_addr_server=_stream->getServerIP();
     	 state.currentRelativePath="/";
-			 if(state.ip_addr_server.compare("192.168.197.2")==0){
-						state.root_dir = "/mnt/sdcard/cmc";
-			  }else if(state.ip_addr_server.compare("192.168.197.1")==0){
-				state.root_dir = "/mnt/sdcard/fplans";
-			  }
-			 //TODO: pending whe the ip is not from the subnet and exit here
-			  else{
-
-				//return 0;
-			  }
+			
+			  state.root_dir="whatever you choose";
 			 state.currentDirectory=state.root_dir;
     }
     	void initSequence(){
